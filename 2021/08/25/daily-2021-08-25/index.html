@@ -20,19 +20,20 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="因为比较懒，经过几次挣扎终于把博客搭建起来了。在此之前，一般是在本地或者云笔记上做记录，但是本地容易丢失，云笔记有时打开特别慢，所以最终还是搭建了博客(Hexo+Github Pages)。参考资料https:&#x2F;&#x2F;zhuanlan.zhihu.com&#x2F;p&#x2F;102592286 今天在写相关文档时，考虑到阅读文档时能够直接的看到相关类自建的关系，于是决定做一张类图。本人穷B，用的是Idea Commu">
+  <meta name="description" content="前端时间出现服务器磁盘被用完的情况，当时排查发现是因为docker容器日志占用了太多空间。有个docker容器占用了25G硬盘空间。当时把服务重启，情况日志了。正确做法应该是配置docker日志，限制日志文件个数和每个文件大小。1.新建配置文件: &#x2F;etc&#x2F;docker&#x2F;daemon.json，若有就不用新建了。 1234&amp;#123;&quot;log-driver&quot;:&quot;jso">
 <meta property="og:type" content="article">
-<meta property="og:title" content="PlantUML">
-<meta property="og:url" content="http://example.com/2021/08/23/diary-2021-08-23/index.html">
+<meta property="og:title" content="daily-2021-08-25">
+<meta property="og:url" content="http://example.com/2021/08/25/daily-2021-08-25/index.html">
 <meta property="og:site_name" content="开发日记">
-<meta property="og:description" content="因为比较懒，经过几次挣扎终于把博客搭建起来了。在此之前，一般是在本地或者云笔记上做记录，但是本地容易丢失，云笔记有时打开特别慢，所以最终还是搭建了博客(Hexo+Github Pages)。参考资料https:&#x2F;&#x2F;zhuanlan.zhihu.com&#x2F;p&#x2F;102592286 今天在写相关文档时，考虑到阅读文档时能够直接的看到相关类自建的关系，于是决定做一张类图。本人穷B，用的是Idea Commu">
+<meta property="og:description" content="前端时间出现服务器磁盘被用完的情况，当时排查发现是因为docker容器日志占用了太多空间。有个docker容器占用了25G硬盘空间。当时把服务重启，情况日志了。正确做法应该是配置docker日志，限制日志文件个数和每个文件大小。1.新建配置文件: &#x2F;etc&#x2F;docker&#x2F;daemon.json，若有就不用新建了。 1234&amp;#123;&quot;log-driver&quot;:&quot;jso">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2021-08-23T08:22:00.313Z">
-<meta property="article:modified_time" content="2021-08-23T09:51:24.117Z">
+<meta property="article:published_time" content="2021-08-25T10:47:29.000Z">
+<meta property="article:modified_time" content="2021-08-25T10:58:27.229Z">
 <meta property="article:author" content="plum.li">
+<meta property="article:tag" content="docker log">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://example.com/2021/08/23/diary-2021-08-23/">
+<link rel="canonical" href="http://example.com/2021/08/25/daily-2021-08-25/">
 
 
 <script id="page-configurations">
@@ -45,7 +46,7 @@
   };
 </script>
 
-  <title>PlantUML | 开发日记</title>
+  <title>daily-2021-08-25 | 开发日记</title>
   
 
 
@@ -150,7 +151,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021/08/23/diary-2021-08-23/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/08/25/daily-2021-08-25/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -163,7 +164,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          PlantUML
+          daily-2021-08-25
         </h1>
 
         <div class="post-meta">
@@ -174,7 +175,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2021-08-23 16:22:00 / 修改时间：17:51:24" itemprop="dateCreated datePublished" datetime="2021-08-23T16:22:00+08:00">2021-08-23</time>
+              <time title="创建时间：2021-08-25 18:47:29 / 修改时间：18:58:27" itemprop="dateCreated datePublished" datetime="2021-08-25T18:47:29+08:00">2021-08-25</time>
             </span>
 
           
@@ -188,8 +189,11 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>因为比较懒，经过几次挣扎终于把博客搭建起来了。在此之前，一般是在本地或者云笔记上做记录，但是本地容易丢失，云笔记有时打开特别慢，所以最终还是搭建了博客(Hexo+Github Pages)。参考资料<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/102592286">https://zhuanlan.zhihu.com/p/102592286</a></p>
-<p>今天在写相关文档时，考虑到阅读文档时能够直接的看到相关类自建的关系，于是决定做一张类图。本人穷B，用的是Idea Community版本，要使用UML制图功能，需要安装相关插件。看到插件中心PlantUML(PlantUML integration)安装量最高，咱也跟着用吧。在Idea中安装后还需要在电脑上安装Graphviz，否则无法使用。</p>
+        <p>前端时间出现服务器磁盘被用完的情况，当时排查发现是因为docker容器日志占用了太多空间。有个docker容器占用了25G硬盘空间。当时把服务重启，情况日志了。<br>正确做法应该是配置docker日志，限制日志文件个数和每个文件大小。<br>1.新建配置文件: /etc/docker/daemon.json，若有就不用新建了。</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line"><span class="attr">&quot;log-driver&quot;</span>:<span class="string">&quot;json-file&quot;</span>,</span><br><span class="line"><span class="attr">&quot;log-opts&quot;</span>: &#123; <span class="attr">&quot;max-size&quot;</span>: <span class="string">&quot;500m&quot;</span>, <span class="attr">&quot;max-file&quot;</span>: <span class="string">&quot;5&quot;</span> &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>max-file=5，意味着一个容器有五个日志，分别是id+.json、id+1.json、id+2.json</p>
+<p>2.重启docker守护进程</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo systemctl daemon-reload</span><br><span class="line">sudo systemctl restart docker</span><br></pre></td></tr></table></figure>
 
     </div>
 
@@ -198,17 +202,20 @@
     
 
       <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/docker-log/" rel="tag"># docker log</a>
+          </div>
 
         
 
 
         
     <div class="post-nav">
-      <div class="post-nav-item"></div>
       <div class="post-nav-item">
-    <a href="/2021/08/25/daily-2021-08-25/" rel="next" title="daily-2021-08-25">
-      daily-2021-08-25 <i class="fa fa-chevron-right"></i>
+    <a href="/2021/08/23/diary-2021-08-23/" rel="prev" title="PlantUML">
+      <i class="fa fa-chevron-left"></i> PlantUML
     </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
